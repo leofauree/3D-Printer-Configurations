@@ -1,0 +1,36 @@
+// AUTOMATICALLY GENERATED FILE. PLEASE DO NOT MODIFY IT MANUALLY
+//
+// PIO Unified Debugger
+//
+// Documentation: https://docs.platformio.org/page/plus/debugging.html
+// Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug",
+            "executable": "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/build/LPC1769/firmware.elf",
+            "projectEnvName": "LPC1769",
+            "toolchainBinDir": "C:/Users/Leonardo/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/Leonardo/.platformio/platforms/nxplpc-arduino-lpc176x/misc/svd/LPC176x5x_v0.2.svd",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug (LPC1769)"
+            }
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/build/LPC1769/firmware.elf",
+            "projectEnvName": "LPC1769",
+            "toolchainBinDir": "C:/Users/Leonardo/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/Leonardo/.platformio/platforms/nxplpc-arduino-lpc176x/misc/svd/LPC176x5x_v0.2.svd"
+        }
+    ]
+}

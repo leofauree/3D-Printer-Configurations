@@ -1,0 +1,71 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/include",
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/Marlin",
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/SailfishLCD",
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/Adafruit NeoPixel",
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/TMCStepper/src",
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/U8glib-HAL/src",
+                "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/libraries/LiquidCrystal/src",
+                "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/libraries/Servo/src",
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/Marlin/src/HAL/HAL_LPC1768/include",
+                "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/Marlin/src/HAL/HAL_LPC1768/u8g",
+                "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/cores/arduino",
+                "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/system/CMSIS/include",
+                "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/system/CMSIS/lib",
+                "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/system/lpc176x",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/include",
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/Marlin",
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/SailfishLCD",
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/Adafruit NeoPixel",
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/TMCStepper/src",
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/.pio/libdeps/LPC1769/U8glib-HAL/src",
+                    "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/libraries/LiquidCrystal/src",
+                    "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/libraries/Servo/src",
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/Marlin/src/HAL/HAL_LPC1768/include",
+                    "D:/OneDrive - Instituto Maua de Tecnologia/Ender3/6. Marlin/SKR1.4Turbo/Ender-3-SKR-1.4-Turbo/Marlin/src/HAL/HAL_LPC1768/u8g",
+                    "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/cores/arduino",
+                    "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/system/CMSIS/include",
+                    "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/system/CMSIS/lib",
+                    "C:/Users/Leonardo/.platformio/packages/framework-arduino-lpc176x/system/lpc176x",
+                    ""
+                ]
+            },
+            "defines": [
+                "LPC176X_FRAMEWORK",
+                "TARGET_LPC1768",
+                "F_CPU=120000000L",
+                "MCU_LPC1769",
+                "PIO_PLATFORM_VERSION=1001UL",
+                "PIO_FRAMEWORK_VERSION=2006UL",
+                "PLATFORMIO=50201",
+                "U8G_HAL_LINKS",
+                "__MARLIN_FIRMWARE__",
+                "ARDUINO_ARCH_LPC176X",
+                "ARDUINOLPC=10805",
+                ""
+            ],
+            "cppStandard": "c++17",
+            "compilerPath": "C:/Users/Leonardo/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mthumb",
+                "-mcpu=cortex-m3",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
