@@ -1,4 +1,4 @@
-# Ender-3-SKR-1.4-Turbo
+# Ender 3 + SKR-1.4 Turbo + BL Touch
 
 Marlin compiled firmware with some additional features that suit the SKR 1.4 Turbo Board, with 4xTMC2208 BTT Drivers and a BL Touch. 
 

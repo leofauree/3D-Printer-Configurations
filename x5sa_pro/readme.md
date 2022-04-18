@@ -63,7 +63,7 @@ To flash Klipper to the Raspberry Pi, I recommend using the KIAUH tool linked be
 
   -Now you will start to flash the bootloader. Hit up "Erasing & Programming on the left bar. Go on "Erase Flash Memory" and click on "Full chip erase". Confirm on the dialog window that will show up.   
 
-  -Click Browse and search for the bootloader file - [chitutronxybootloader.bin](/chitutronxybootloader/chitutronxybootloader.bin)(linked here on the bootloader section).  
+  -Click Browse and search for the bootloader file - [chitutronxybootloader.bin](/chitutronxybootloader/chitutronxybootloader.bin) (linked here on the bootloader section).  
  
   -Now you can already disconnect the board, set the jumpers as they were at the start and follow on to compiling and uploading the firmware.   
 
@@ -90,9 +90,9 @@ make menu-config
   -While at this stage, Klipper will already be compiled, to update the Chitu V6 board you'll need a "update.cbd" file, and  at this moment, you'll only have a "firmware.bin" file.   
 
   -To build the update.cbd:  
-
->"./scripts/update_chitu.py ./out/klipper.bin ./out/update.cbd"
-
+```sh
+"./scripts/update_chitu.py ./out/klipper.bin ./out/update.cbd"
+```
 
 # How to update the firmware on the board  
   -Place the "update.cbd" file on an SD card and boot the printer. It should beep 6 times and it would be correctly flashed.   
@@ -112,19 +112,19 @@ make menu-config
 
   -Following the picture above, you'll solder 3 jumper cables from pins 20 to 22 on the E1 driver, to the respective pins 17 to the E0, X and Y drivers. Take notice that some of the drivers are rotated 180°, so take reference on the pin on the far upper left on each driver. That is the first pin reference.   
 
-<img align="center"src="../docs/images/uart_soldered.jpeg" />
+<img align="center" src="../docs/images/uart_soldered.jpeg" />
 
   -If using Marlin, the UART setup is:   
+```sh
+#define X_SERIAL_TX_PIN PC6
+#define X_SERIAL_RX_PIN PC6
 
->#define X_SERIAL_TX_PIN PC6
->#define X_SERIAL_RX_PIN PC6
->
->#define Y_SERIAL_TX_PIN PG8
->#define Y_SERIAL_RX_PIN PG8
->
->#define E0_SERIAL_TX_PIN PC7
->#define E0_SERIAL_RX_PIN PC7
+#define Y_SERIAL_TX_PIN PG8
+#define Y_SERIAL_RX_PIN PG8
 
+#define E0_SERIAL_TX_PIN PC7
+#define E0_SERIAL_RX_PIN PC7
+```
 
   -If using Klipper, the config is alreay setup in my configuration, but it also goes as:   
 ```sh
