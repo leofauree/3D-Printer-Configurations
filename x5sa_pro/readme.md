@@ -108,11 +108,11 @@ make menu-config
 ## **❗ Notes:**
   -While this process is not complicated, it definetly is not for the faint of heart. This process needs good soldering habilities, a steady hand and lots of patience.   
 
-[UART Jumpers]<img align="center" src="../docs/images/uart_jumpers.jpg" />
+<img align="center" src="../docs/images/uart_jumpers.jpg" />
 
   -Following the picture above, you'll solder 3 jumper cables from pins 20 to 22 on the E1 driver, to the respective pins 17 to the E0, X and Y drivers. Take notice that some of the drivers are rotated 180°, so take reference on the pin on the far upper left on each driver. That is the first pin reference.   
 
-[Soldered UART pins]<img align="center" width=60 src="../docs/images/uart_soldered.jpeg" />
+<img align="center"src="../docs/images/uart_soldered.jpeg" />
 
   -If using Marlin, the UART setup is:   
 
@@ -127,7 +127,7 @@ make menu-config
 
 
   -If using Klipper, the config is alreay setup in my configuration, but it also goes as:   
-´´´
+```sh
 [tmc2208 stepper_x]    
 uart_pin: PC6   
 run_current: 0.8   
@@ -148,4 +148,4 @@ run_current: 0.55
 hold_current: 0.3  
 stealthchop_threshold: 99999   
 interpolate: True   
-´´´
+```
