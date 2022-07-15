@@ -1,5 +1,8 @@
 # Tronxy X5SA-PRO 330
 
+## **❗ Note:**
+##I no longer have this printer, so this may be the final commit. 
+
 ## **🛠️ Machine setup:** 
   - Stock Chitu Board V6 (CXY-V6-191017)
   - V6 Clone Hotend
@@ -9,24 +12,11 @@
   - Fimware: Klipper
 
 # Table of Contents
-- [How to unlock the Chitu V6 board's bootloader](#-How-to-unlock-the-Chitu-V6-board's-bootloader)
+- [How to unlock the Chitu V6 board's bootloader](#-How-to-unlock-the-Chitu-V6-bootloader)
 - [How to compile Klipper to the Chitu V6 Board (CXY-V6-191017)](#How-to-compile-Klipper-to-the-Chitu-V6-Board-(CXY-V6-191017))
 - [How to enable UART on the V6 board](#How-to-enable-UART-on-the-V6-board)
 - [How to update the firmware on the board](#How-to-update-the-firmware-on-the-board)
-
-
-
-# How to compile Klipper to the Chitu V6 Board (CXY-V6-191017)
-
-To flash Klipper to the Raspberry Pi, I recommend using the KIAUH tool linked below.
-## Referência
-
- - [KIAUH Klipper Installation And Update Helper](https://github.com/th33xitus/kiauh)
- - [Klipper Github](https://github.com/Klipper3d/klipper)
- - [Klipper Docs](https://www.klipper3d.org/)
-
-
-
+- [Enclosure and printed upgrades](#Enclosure-and-printed-upgrades)
 
 ## **🛠️ Instructions:**
 
@@ -35,7 +25,8 @@ To flash Klipper to the Raspberry Pi, I recommend using the KIAUH tool linked be
 -I take no responsability on the usage of any of this code or files.  
 **📢 Usage of this script happens at your own risk!**
 
-# How to unlock the Chitu V6 board's bootloader  
+
+# How to unlock the Chitu V6 bootloader  
   -To flash a firmware to the printer's MCU, first you'll need to unlock the Bootloader (this works either for Marlin or Klipper).  
 
   -To unlock the bootloader,you'll need to use the STM32 Cube Programmer. I am only writing detailing all the steps from the following youtube video from ["Nozzled"](https://youtu.be/N1FaKO5QziE), [J C Nelson](https://hackaday.io/project/167594-chitu-3d-printer-mainboard-hacking) and to [Victor Oliveira](https://github.com/rhapsodyv)  
@@ -74,6 +65,17 @@ To flash Klipper to the Raspberry Pi, I recommend using the KIAUH tool linked be
 
 
 
+# How to compile Klipper to the Chitu V6 Board (CXY-V6-191017)
+
+To flash Klipper to the Raspberry Pi, I recommend using the KIAUH tool linked below.
+## Referência
+
+ - [KIAUH Klipper Installation And Update Helper](https://github.com/th33xitus/kiauh)
+ - [Klipper Github](https://github.com/Klipper3d/klipper)
+ - [Klipper Docs](https://www.klipper3d.org/)
+
+
+
 
 # How to compile Klipper to the Chitu V6 Board (CXY-V6-191017)
   - Create fimware bin following bellow image  
@@ -100,7 +102,7 @@ make menu-config
   -If coming from Marlin, you'll notice the screen no longer turns on, and that's totally normal as it is not currently supported natively on Klipper.   
 
 
-#How to enable UART on the V6 board
+# How to enable UART on the V6 board
 
   -The stock Chitu V6 board contains 5 stepper driver pads but only 4 stepper drivers are soldered in (for all models with only one extruder, for those with 2 extruders, UART is not capable on the stock board). 
  
@@ -149,3 +151,8 @@ hold_current: 0.3
 stealthchop_threshold: 99999   
 interpolate: True   
 ```
+
+#Enclosure and printed upgrades
+
+
+  	-Here is a printed brass nozzle holder, I use it to clean the nozzle before some prints. Using a macro you can enable it periodically. https://www.thingiverse.com/thing:4087860/files

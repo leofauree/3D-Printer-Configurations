@@ -1,10 +1,17 @@
 # Ender 3 + SKR-1.4 Turbo + BL Touch
 
-Marlin compiled firmware with some additional features that suit the SKR 1.4 Turbo Board, with 4xTMC2208 BTT Drivers and a BL Touch. 
+## **❗ Note:**
+##I no longer have this printer, so this may be the final commit. 
 
-Changes made (some things may be missing from here): 
 
-Configuration.h
+
+##Klipper config 
+
+##Marlin compiled firmware with some additional features that suit the SKR 1.4 Turbo Board, with 4xTMC2208 BTT Drivers and a BL Touch. 
+
+###Changes made (some things may be missing from here): 
+
+###Configuration.h
 
 	-Speed and accel slightly higher at: (DEFAULT_MAX_FEEDRATE          { 500, 500, 20, 50 }, DEFAULT_MAX_ACCELERATION      { 500, 500, 200, 5000 })
 	-TMC2208  Drivers on the X,Y,Z and E0 steppers
@@ -23,7 +30,7 @@ Configuration.h
 	-Filament Runout Sensor added using the stock Ender 3 Z Endstop
 	-Added EEPROM saving
 
-Configuration_adv.h
+###Configuration_adv.h
 
 	-Extruder cooler pin configured
 	-Quick Home function added (homes all axis at the same time)
